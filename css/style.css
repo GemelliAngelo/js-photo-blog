@@ -13,6 +13,14 @@ h1 {
 .card {
   border: none;
   border-radius: 0;
+  position: relative;
+}
+
+.card-pin {
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  transform: translate(-50%, 0);
 }
 
 .card-body {
