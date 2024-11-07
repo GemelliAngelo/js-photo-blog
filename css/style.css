@@ -16,5 +16,10 @@ h1 {
 }
 
 .card-body {
-  height: 80px;
+  height: 100px;
+}
+
+.card-text {
+  font-style: italic;
+  text-transform: capitalize;
 }
