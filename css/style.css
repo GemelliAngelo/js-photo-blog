@@ -9,3 +9,12 @@ main {
 h1 {
   font-size: 80px;
 }
+
+.card {
+  border: none;
+  border-radius: 0;
+}
+
+.card-body {
+  height: 80px;
+}
