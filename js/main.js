@@ -3,6 +3,7 @@ const cardTextEl = document.querySelectorAll(".card-text");
 const cardImageEl = document.querySelectorAll(".card-image");
 const overlayEl = document.querySelector(".overlay");
 const buttonEl = document.querySelector(".btn.btn-outline-info");
+const overlayImageEl = document.getElementById("overlay-image");
 
 fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
   .then((response) => response.json())
@@ -18,6 +19,10 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
     cardEl.forEach((card) => {
       card.addEventListener("click", () => {
         overlayEl.classList.remove("d-none");
+        overlayImageEl.setAttribute(
+          `src`,
+          `${card.children[1].getAttribute("src")}`
+        );
       });
     });
     buttonEl.addEventListener("click", () => {
