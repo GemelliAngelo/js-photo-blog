@@ -19,10 +19,11 @@ h1 {
   border-radius: 0;
   position: relative;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .card:hover {
-  transform: rotate(10deg);
+  transform: rotate(10deg) scale(1.1);
   box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.5);
 }
 
