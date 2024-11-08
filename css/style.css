@@ -23,6 +23,7 @@ h1 {
 
 .card:hover {
   transform: rotate(10deg);
+  box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.5);
 }
 
 .card:hover .card-pin {
