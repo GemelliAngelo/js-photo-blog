@@ -21,6 +21,14 @@ h1 {
   cursor: pointer;
 }
 
+.card:hover {
+  transform: rotate(10deg);
+}
+
+.card:hover .card-pin {
+  display: none;
+}
+
 .card-pin {
   position: absolute;
   left: 50%;
